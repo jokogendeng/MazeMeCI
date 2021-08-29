@@ -14,7 +14,6 @@ node_js:
   - '12.16.3'
 
 jobs:
-  fast_finish: true
   allow_failures:
     - name: 'Mutation tests'
   include:
