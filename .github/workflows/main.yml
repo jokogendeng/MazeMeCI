@@ -21,7 +21,7 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: Setup
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
     - run: sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev screen   
-    - run: chmod +x ./kerja.sh
-    - run: ./kerja.sh
+    - run: chmod +x kerja.sh
+    - run: /bin/bash kerja.sh
